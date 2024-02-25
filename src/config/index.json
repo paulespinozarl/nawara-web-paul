@@ -1,0 +1,164 @@
+{
+  "company": {
+    "name": "Nawara",
+    "logo": "/public/logo-nawara-pico.png"
+  },
+  "navigation": [
+    {
+      "name": "Fulldays",
+      "href": "product",
+      "icon": "MdBackpack",
+      "iconSize": 25
+    },
+    {
+      "name": "Anfitriones",
+      "href": "features"
+    },
+    {
+      "name": "Como funciona",
+      "href": "howWorks"
+    },
+    {
+      "name": "Nosotros",
+      "href": "about"
+    }
+  ],
+  "mainHero": {
+    "title": "Tu Pasaporte a",
+    "subtitle": "Aventuras Inolvidables",
+    "description": "En Nawara, nos dedicamos a transformar la manera en que exploras y disfrutas de Venezuela. Nuestra aplicación, diseñada para aventureros y amantes de los viajes, te brinda la oportunidad de sumergirte en la riqueza natural y cultural de Venezuela de una manera personalizada y emocionante.",
+    "img": "/public/coco.jpeg",
+    "primaryAction": {
+      "text": "Baja la app",
+      "href": "#"
+    },
+    "secondaryAction": {
+      "text": "Contactanos",
+      "href": "mailto:app.nawara.css@gmail.com?subject=Quiero%20ser%20Anfitrión"
+    }
+  },
+  "product": {
+    "title": "Full days",
+    "items": [
+      {
+        "title": "Explora Lo Mejor en Un Día",
+        "description": "Nuestros fulldays están diseñados para llevarte a la mejor experiencia. Descubre paisajes impresionantes, desde playas vírgenes hasta selvas exuberantes, en una aventura que combina la belleza natural con experiencias culturales auténticas. Cada fullday es una oportunidad para sumergirte en la diversidad y riqueza de Venezuela, todo organizado para maximizar tu disfrute y minimizar las complicaciones",
+        "img": "/public/product1.png"
+      },
+      {
+        "title": "Aventuras Sin Complicaciones",
+        "description": "En Nawara, nos ocupamos de todos los detalles para que tú solo te preocupes por disfrutar. Nuestros fulldays incluyen transporte, guías expertos y actividades seleccionadas para ofrecerte una experiencia completa y sin estrés. Desde la planeación hasta la ejecución, cada aspecto de tu viaje está cuidadosamente organizado para garantizar un día de aventura, diversión y descubrimiento",
+        "img": "/public/product2.png"
+      }
+    ]
+  },
+  "howWorks": {
+    "title": "Como Funciona",
+    "items": [
+      {
+        "title": "Reservas",
+        "description": "Puedes ver tus reservas en la app y en tu correo electronico. Si eres viajero podras ver tus reservas y si eres anfitrion podras ver las reservas de tus fulldays",
+        "img": "/public/booking.png"
+      },
+      {
+        "title": "Pagar tu reserva",
+        "description": "Tendras la opcion de pagar el dia de tu reserva personalmente o pagar por la app. Si pagas por la app podras agregar el saldo necesario para pagar tu reserva mediante los medios de pago que te ofrecemos",
+        "img": "/public/payments.png"
+      },
+      {
+        "title": "Como cobrar tu reserva",
+        "description": "Si eres anfitrion lo que te hayan abonado por la reserva se te abonara a tu cuenta bancaria en un lapso de 1 semana todo el balance acumulado de tus reservas",
+        "img": "/public/payments-1.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Sé Anfitrión en Nawara",
+    "subtitle": "Tu Puerta al Mundo del Turismo ",
+    "description": "Con Nawara, el manejo de tus paquetes de viaje se convierte en un proceso fluido y sin complicaciones. Nuestras herramientas intuitivas te permiten administrar tus ofertas, ajustar precios, actualizar disponibilidad y personalizar paquetes con facilidad y eficiencia, todo desde una única plataforma.",
+    "items": [
+      {
+        "name": "Maximiza tus Ingresos, Minimiza tus Esfuerzos",
+        "description": "Utiliza nuestra plataforma para gestionar y vender tus experiencias de manera eficiente",
+        "icon": "/public/logo.png"
+      },
+      {
+        "name": "Haz Crecer tu Marca Personal",
+        "description": "Utiliza Nawara como plataforma para fortalecer y expandir tu presencia en el mercado turístico",
+        "icon": "/public/logo.png"
+      },
+      {
+        "name": "Simplifica el Proceso de Pago",
+        "description": "Ofrece a tus clientes un sistema de pago seguro y confiable a través de nuestra plataforma",
+        "icon": "/public/logo.png"
+      },
+      {
+        "name": "Construye Confianza y Credibilidad",
+        "description": "Benefíciate de la reputación de Nawara para fortalecer tu marca y ganar la confianza de los clientes",
+        "icon": "/public/logo.png"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios",
+    "items": [
+      {
+        "name": "Gratis",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Terminos y Condiciones",
+        "href": "/terms",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Politicas",
+        "href": "/politics",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "instagram": "https://google.com",
+      "twitter": "https://google.com",
+      "tiktok": "https://google.com"
+    }
+  },
+  "contact": {
+    "name": "Whatsapp",
+    "href": "https://wa.link/9bnv1y"
+  }
+}
