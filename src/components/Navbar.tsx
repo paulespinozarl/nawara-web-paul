@@ -3,7 +3,6 @@ import config from "../config/index.json";
 import { useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-import { logo_pico } from "../../public/index";
 
 interface NavigationItem {
   name: string;
@@ -33,7 +32,6 @@ function Navbar(): JSX.Element {
           />
           <h2 className="text-xl lg:text-2xl">{config.company.name}</h2>
         </Link>
-        <img className="h-14" src={logo_pico} alt="pico" />
         {isLargeScreen && (
           <span className="flex">
             {navigation.map((item: NavigationItem) => (
