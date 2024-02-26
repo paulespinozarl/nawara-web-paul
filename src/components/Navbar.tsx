@@ -14,7 +14,7 @@ function Navbar(): JSX.Element {
   const isLargeScreen = useMediaQuery("(min-width: 864px)");
   const isShortScreen = useMediaQuery("(max-width: 864px)");
 
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu] = useState(false);
 
   return (
     <div className="flex fixed top-0 shadow-md w-screen z-50">
