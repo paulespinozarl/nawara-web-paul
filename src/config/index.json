@@ -1,7 +1,7 @@
 {
   "company": {
     "name": "Nawara",
-    "logo": "../public/logo-nawara-pico.png"
+    "logo": "/logo-nawara-pico.png"
   },
   "navigation": [
     {
@@ -27,7 +27,7 @@
     "title": "Tu Pasaporte a",
     "subtitle": "Aventuras Inolvidables",
     "description": "En Nawara, nos dedicamos a transformar la manera en que exploras y disfrutas de Venezuela. Nuestra aplicación, diseñada para aventureros y amantes de los viajes, te brinda la oportunidad de sumergirte en la riqueza natural y cultural de Venezuela de una manera personalizada y emocionante.",
-    "img": "../public/coco.jpeg",
+    "img": "/coco.jpeg",
     "primaryAction": {
       "text": "Baja la app",
       "href": "#"
@@ -43,12 +43,12 @@
       {
         "title": "Explora Lo Mejor en Un Día",
         "description": "Nuestros fulldays están diseñados para llevarte a la mejor experiencia. Descubre paisajes impresionantes, desde playas vírgenes hasta selvas exuberantes, en una aventura que combina la belleza natural con experiencias culturales auténticas. Cada fullday es una oportunidad para sumergirte en la diversidad y riqueza de Venezuela, todo organizado para maximizar tu disfrute y minimizar las complicaciones",
-        "img": "../public/product1.png"
+        "img": "/product1.png"
       },
       {
         "title": "Aventuras Sin Complicaciones",
         "description": "En Nawara, nos ocupamos de todos los detalles para que tú solo te preocupes por disfrutar. Nuestros fulldays incluyen transporte, guías expertos y actividades seleccionadas para ofrecerte una experiencia completa y sin estrés. Desde la planeación hasta la ejecución, cada aspecto de tu viaje está cuidadosamente organizado para garantizar un día de aventura, diversión y descubrimiento",
-        "img": "../public/product2.png"
+        "img": "/product2.png"
       }
     ]
   },
@@ -58,17 +58,17 @@
       {
         "title": "Reservas",
         "description": "Puedes ver tus reservas en la app y en tu correo electronico. Si eres viajero podras ver tus reservas y si eres anfitrion podras ver las reservas de tus fulldays",
-        "img": "../public/booking.png"
+        "img": "/booking.png"
       },
       {
         "title": "Pagar tu reserva",
         "description": "Tendras la opcion de pagar el dia de tu reserva personalmente o pagar por la app. Si pagas por la app podras agregar el saldo necesario para pagar tu reserva mediante los medios de pago que te ofrecemos",
-        "img": "../public/payments.png"
+        "img": "/payments.png"
       },
       {
         "title": "Como cobrar tu reserva",
         "description": "Si eres anfitrion lo que te hayan abonado por la reserva se te abonara a tu cuenta bancaria en un lapso de 1 semana todo el balance acumulado de tus reservas",
-        "img": "../public/payments-1.png"
+        "img": "/payments-1.png"
       }
     ]
   },
@@ -80,22 +80,22 @@
       {
         "name": "Maximiza tus Ingresos, Minimiza tus Esfuerzos",
         "description": "Utiliza nuestra plataforma para gestionar y vender tus experiencias de manera eficiente",
-        "icon": "../public/logo.png"
+        "icon": "/logo.png"
       },
       {
         "name": "Haz Crecer tu Marca Personal",
         "description": "Utiliza Nawara como plataforma para fortalecer y expandir tu presencia en el mercado turístico",
-        "icon": "../public/logo.png"
+        "icon": "/logo.png"
       },
       {
         "name": "Simplifica el Proceso de Pago",
         "description": "Ofrece a tus clientes un sistema de pago seguro y confiable a través de nuestra plataforma",
-        "icon": "../public/logo.png"
+        "icon": "/logo.png"
       },
       {
         "name": "Construye Confianza y Credibilidad",
         "description": "Benefíciate de la reputación de Nawara para fortalecer tu marca y ganar la confianza de los clientes",
-        "icon": "../public/logo.png"
+        "icon": "/logo.png"
       }
     ]
   },
