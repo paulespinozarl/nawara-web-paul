@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@react-hook/media-query";
-import config from "../config/index.json";
+import config from "../../index.json";
 import { useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";

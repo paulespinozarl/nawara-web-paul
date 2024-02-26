@@ -1,4 +1,4 @@
-import config from "../config/index.json";
+import config from "../../index.json";
 import { MdBackpack } from "react-icons/md";
 import { FaUser, FaCog, FaWhatsapp } from "react-icons/fa";
 import { MdInfo } from "react-icons/md";
