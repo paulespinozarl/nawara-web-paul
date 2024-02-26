@@ -10,7 +10,7 @@ const Button = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="mt-1">
+    <div>
       <button
         className={`hamburger hamburger--spin ${isActive ? "is-active" : ""}`}
         type="button"

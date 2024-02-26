@@ -49,7 +49,7 @@ function Navbar(): JSX.Element {
         )}
       </nav>
       {isShortScreen && (
-        <div className="flex items-center bg-white">
+        <div className="bg-white">
           <Button />
         </div>
       )}
