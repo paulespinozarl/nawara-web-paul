@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       height: {
-        "calc-64-px": "calc(100vh - 64px)",
-        Phone: "780px",
+        "calc-64": "calc(100vh - 64px)",
       },
       colors: {
         primary: "#BFEBE5",

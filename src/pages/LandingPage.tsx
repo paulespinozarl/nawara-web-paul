@@ -24,7 +24,7 @@ const LandingPage = () => {
   const isShortScreen = useMediaQuery("(max-width: 390px)");
 
   return (
-    <section className="relative w-full h-calc-64-px bg-background mt-16">
+    <section className="relative w-full h-calc-64 bg-background mt-16">
       <video
         autoPlay
         loop

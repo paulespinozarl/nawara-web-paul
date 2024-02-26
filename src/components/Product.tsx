@@ -48,7 +48,7 @@ const ProductItem: React.FC<ProductItemProps> = ({
           </h3>
           <p className="text-gray-800 text-sm lg:text-lg">{description}</p>
         </div>
-        <img className="w-1/2" src={imgSrc} alt="image" />
+        <img className="w-60 lg:w-1/3" src={imgSrc} alt="image" />
       </div>
     </div>
   );
