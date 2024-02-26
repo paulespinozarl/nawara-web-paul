@@ -3,16 +3,16 @@ import SideBar from "./SideBar";
 
 const Button = () => {
   const [isActive, setIsActive] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleActive = () => {
     setIsActive(!isActive);
+    setShowMenu(!showMenu);
   };
   return (
     <div className="mt-1">
       <button
-        className={`hamburger hamburger--spin z-50 ${
-          isActive ? "is-active" : ""
-        }`}
+        className={`hamburger hamburger--spin ${isActive ? "is-active" : ""}`}
         type="button"
         onClick={toggleActive}
       >
@@ -20,7 +20,7 @@ const Button = () => {
           <span className="hamburger-inner"></span>
         </span>
       </button>
-      <div className={`${isActive ? "" : "hidden"} bg-gray-50 w-screen`}>
+      <div className={`${isActive ? "" : "hidden"} bg-gray-50`}>
         <SideBar />
       </div>
     </div>

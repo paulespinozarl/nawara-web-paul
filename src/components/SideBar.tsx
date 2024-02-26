@@ -20,7 +20,7 @@ const SideBar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-96">
       {navigation.map((item: NavigationItem) => (
         <a
           rel="noopener noreferrer"

@@ -20,7 +20,7 @@ function Navbar(): JSX.Element {
     <div className="flex fixed top-0 shadow-md w-screen z-50">
       <nav
         className={`
-        bg-gray-50 h-16  text-gray-800 flex items-center w-full justify-between
+        bg-gray-50 h-16  text-gray-800 flex items-center w-screen justify-between
         ${showMenu ? "hidden" : "flex"}
         `}
       >
@@ -40,7 +40,7 @@ function Navbar(): JSX.Element {
                 target="_blank"
                 href={item.href}
                 key={item.name}
-                className="mx-6 font-bold text-sm"
+                className="font-bold text-sm mr-10"
               >
                 {item.name}
               </a>
@@ -48,12 +48,8 @@ function Navbar(): JSX.Element {
           </span>
         )}
       </nav>
-      {/* Mostrar el botón fuera del área de navegación */}
       {isShortScreen && (
-        <div
-          onClick={() => setShowMenu(!showMenu)}
-          className="flex items-center bg-white"
-        >
+        <div className="flex items-center bg-white">
           <Button />
         </div>
       )}
