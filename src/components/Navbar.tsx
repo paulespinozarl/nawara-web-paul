@@ -1,8 +1,9 @@
 import { useMediaQuery } from "@react-hook/media-query";
-import config from "../../index.json";
+import config from "../config/index.json";
 import { useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import { logo_pico } from "../../public/index";
 
 interface NavigationItem {
   name: string;
@@ -32,7 +33,7 @@ function Navbar(): JSX.Element {
           />
           <h2 className="text-xl lg:text-2xl">{config.company.name}</h2>
         </Link>
-        {/* Mostrar navegación solo en pantallas grandes */}
+        <img className="h-14" src={logo_pico} alt="pico" />
         {isLargeScreen && (
           <span className="flex">
             {navigation.map((item: NavigationItem) => (

@@ -1,6 +1,6 @@
 import { PiWhatsappLogoThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import config from "../../index.json";
+import config from "../config/index.json";
 
 const Whatsapp = () => {
   const { contact } = config;

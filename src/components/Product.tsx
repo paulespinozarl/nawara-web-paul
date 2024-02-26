@@ -3,7 +3,7 @@ import "animate.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-import config from "../../index.json";
+import config from "../config/index.json";
 
 interface ProductItemProps {
   title: string;
