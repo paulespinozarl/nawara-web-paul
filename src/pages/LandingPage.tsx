@@ -31,7 +31,7 @@ const LandingPage = () => {
         muted
         className="object-cover w-full h-full opacity-50"
       >
-        <source src="../public/video.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
         Tu navegador no soporta el elemento de video.
       </video>
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
