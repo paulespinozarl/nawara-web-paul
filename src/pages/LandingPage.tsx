@@ -25,15 +25,10 @@ const LandingPage = () => {
 
   return (
     <section className="relative w-full h-calc-64 bg-background mt-16">
-      <video
-        autoPlay
-        loop
-        muted
+      <img
+        src="/videoGif.gif"
         className="object-cover w-full h-full opacity-50"
-      >
-        <source src="/video.mp4" type="video/mp4" />
-        Tu navegador no soporta el elemento de video.
-      </video>
+      />
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">

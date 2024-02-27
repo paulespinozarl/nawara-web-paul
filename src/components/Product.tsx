@@ -41,12 +41,18 @@ const ProductItem: React.FC<ProductItemProps> = ({
       ref={ref}
       className={`flex justify-center items-center mb-4 ${animationClass}`}
     >
-      <div className="flex flex-col lg:flex-row items-center max-w-80 lg:max-w-5xl">
+      <div
+        className={`flex flex-col lg:flex-row items-center max-w-80 lg:max-w-5xl ${
+          animationDirection === "right" ? "lg:flex-row-reverse" : ""
+        }`}
+      >
         <div>
           <h3 className="text-border font-bold text-xl lg:text-3xl mb-2">
             {title}
           </h3>
-          <p className="text-gray-800 text-sm lg:text-lg">{description}</p>
+          <p className="text-gray-800 text-sm lg:text-lg max-w-xl">
+            {description}
+          </p>
         </div>
         <img className="w-60 lg:w-1/3" src={imgSrc} alt="image" />
       </div>
