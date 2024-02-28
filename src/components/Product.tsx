@@ -71,7 +71,7 @@ const Product = ({ template }: { template: "product" | "howWorks" }) => {
   const { title, items } = data;
 
   return (
-    <div className="my-12">
+    <div id={template} className="mt-10">
       <h2 className="text-4xl lg:text-5xl flex justify-center text-secondary font-bold">
         {title}
       </h2>

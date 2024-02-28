@@ -2,19 +2,26 @@ import { useMediaQuery } from "@react-hook/media-query";
 import config from "../config/index.json";
 import { useState } from "react";
 import Button from "./Button";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import SideBar from "./SideBar";
 
 interface NavigationItem {
   name: string;
   href: string;
+  spy?: boolean;
 }
 
 function Navbar(): JSX.Element {
   const { navigation } = config;
   const isLargeScreen = useMediaQuery("(min-width: 864px)");
   const isShortScreen = useMediaQuery("(max-width: 864px)");
+  const [isActive, setIsActive] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  const [showMenu] = useState(false);
+  const toggleActive = () => {
+    setIsActive(!isActive);
+    setShowMenu(!showMenu);
+  };
 
   return (
     <div className="flex fixed top-0 shadow-md w-screen z-50">
@@ -35,22 +42,26 @@ function Navbar(): JSX.Element {
         {isLargeScreen && (
           <span className="flex">
             {navigation.map((item: NavigationItem) => (
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href={item.href}
+              <Link
+                spy={true}
+                smooth={true}
+                duration={1000}
                 key={item.name}
+                to={item.href}
                 className="font-bold text-sm mr-10"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </span>
         )}
       </nav>
       {isShortScreen && (
-        <div className="bg-white">
-          <Button />
+        <div className={`${isActive ? "w-screen" : ""} bg-gray-50`}>
+          <Button isActive={isActive} toggleActive={toggleActive} />
+          <div className={`${isActive ? "" : "hidden"}`}>
+            <SideBar />
+          </div>
         </div>
       )}
     </div>

@@ -2,6 +2,7 @@ import config from "../config/index.json";
 import { MdBackpack } from "react-icons/md";
 import { FaUser, FaCog, FaWhatsapp } from "react-icons/fa";
 import { MdInfo } from "react-icons/md";
+import { Link } from "react-scroll";
 
 interface NavigationItem {
   name: string;
@@ -20,18 +21,19 @@ const SideBar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col w-96">
+    <div className="flex flex-col">
       {navigation.map((item: NavigationItem) => (
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href={item.href}
+        <Link
+          spy={true}
+          smooth={true}
+          duration={1000}
           key={item.name}
+          to={item.href}
           className="my-4 font-bold text-sm flex items-center"
         >
           <span className="ml-2">{icons[item.name]}</span>
           <span className="ml-2">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </div>
   );
