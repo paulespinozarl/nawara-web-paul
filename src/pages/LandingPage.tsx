@@ -11,7 +11,7 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
   return (
     <span
       className="
-        border border-solid p-2 m-2 border-tertiary rounded-xl flex items-center justify-around w-44
+        border border-solid p-2 m-2 border-gray-50 rounded-xl flex items-center justify-around w-44
       "
     >
       {icon}
@@ -24,7 +24,7 @@ const LandingPage = () => {
   const isShortScreen = useMediaQuery("(max-width: 390px)");
 
   return (
-    <section className="relative w-full h-calc-64 bg-background mt-16">
+    <section className="relative w-full h-calc-64 bg-black mt-16">
       <img
         src="/videoGif.gif"
         className="object-cover w-full h-full opacity-50"
@@ -33,7 +33,7 @@ const LandingPage = () => {
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">
             <h1 className=" text-primary w-full">Tu Pasaporte a</h1>
-            <h1 className=" text-secondary">
+            <h1 className=" text-tertiary">
               Aventuras <br /> inolvidables
             </h1>
           </div>

@@ -95,7 +95,7 @@
       {
         "name": "Construye Confianza y Credibilidad",
         "description": "Benefíciate de la reputación de Nawara para fortalecer tu marca y ganar la confianza de los clientes",
-        "icon": "/logo.png"
+        "icon": "<MdOutlineHandshake />"
       }
     ]
   },

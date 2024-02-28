@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .container {
-  @apply mt-16 max-w-full flex flex-col gap-6 p-1 md:p-5 justify-center items-center text-sm md:text-base text-border;
+  @apply mt-16 max-w-full flex flex-col gap-6 p-1 md:p-5 justify-center items-center text-sm md:text-base text-secondary;
 }

@@ -5,7 +5,7 @@ interface ItemListaProps {
 
 const ItemList: React.FC<ItemListaProps> = ({ id, texto }) => (
   <li>
-    <a href={`#${id}`} className="no-underline text-quaternary">
+    <a href={`#${id}`} className="no-underline text-tertiary">
       {texto}
     </a>
   </li>

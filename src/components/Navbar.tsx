@@ -20,7 +20,7 @@ function Navbar(): JSX.Element {
     <div className="flex fixed top-0 shadow-md w-screen z-50">
       <nav
         className={`
-        bg-gray-50 h-16  text-gray-800 flex items-center w-screen justify-between
+        bg-slate-50 h-16  text-gray-800 flex items-center w-screen justify-between
         ${showMenu ? "hidden" : "flex"}
         `}
       >

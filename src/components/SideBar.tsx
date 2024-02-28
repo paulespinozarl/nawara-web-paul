@@ -12,11 +12,11 @@ const SideBar: React.FC = () => {
   const { navigation } = config;
 
   const icons: { [key: string]: JSX.Element } = {
-    Fulldays: <MdBackpack size={20} className="text-quaternary" />,
-    Anfitriones: <FaUser size={20} className="text-quaternary" />,
-    "Como funciona": <FaCog size={20} className="text-quaternary" />,
-    Nosotros: <MdInfo size={20} className="text-quaternary" />,
-    Whatsapp: <FaWhatsapp size={20} className="text-quaternary" />,
+    Fulldays: <MdBackpack size={20} className="text-secondary" />,
+    Anfitriones: <FaUser size={20} className="text-secondary" />,
+    "Como funciona": <FaCog size={20} className="text-secondary" />,
+    Nosotros: <MdInfo size={20} className="text-secondary" />,
+    Whatsapp: <FaWhatsapp size={20} className="text-secondary" />,
   };
 
   return (

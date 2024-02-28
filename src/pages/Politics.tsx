@@ -7,7 +7,7 @@ export default function Politics() {
     <>
       <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
-          <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-quaternary">
+          <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-tertiary">
             POLÍTICA DE PRIVACIDAD
           </span>
           <span className="font-bold mx-3">
@@ -376,7 +376,7 @@ export default function Politics() {
             solicitud de acceso de datos. Esta política de privacidad fue creada
             utilizando el Generador de Política de Privacidad de Termly.
           </span>
-          <hr className="mt-8 border-t-1 border-quaternary" />
+          <hr className="mt-8 border-t-1 border-tertiary" />
         </div>
         <About />
       </div>
