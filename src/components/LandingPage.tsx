@@ -24,7 +24,7 @@ const LandingPage = () => {
   const isShortScreen = useMediaQuery("(max-width: 390px)");
 
   return (
-    <section className="relative w-full h-calc-64 bg-black mt-16">
+    <section className="relative w-full h-calc-64 bg-gray-800 mt-16">
       <img
         src="/videoGif.gif"
         className="object-cover w-full h-full opacity-50"
