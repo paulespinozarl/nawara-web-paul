@@ -1,6 +1,7 @@
 import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { useMediaQuery } from "@react-hook/media-query";
+import config from "../config/index.json";
 
 interface ButtonWithIconProps {
   icon: JSX.Element;
@@ -22,6 +23,8 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
 
 const LandingPage = () => {
   const isShortScreen = useMediaQuery("(max-width: 390px)");
+  const { mainHero } = config;
+  const { title, subtitle, description } = mainHero;
 
   return (
     <section className="relative w-full h-calc-64 bg-slate-600 mt-16">
@@ -32,17 +35,11 @@ const LandingPage = () => {
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">
-            <h1 className=" text-primary w-full">Tu Pasaporte a</h1>
-            <h1 className=" text-tertiary">
-              Aventuras <br /> inolvidables
-            </h1>
+            <h1 className=" text-slate-50 w-full">{title}</h1>
+            <h1 className=" text-tertiary">{subtitle}</h1>
           </div>
-          <p className="max-w-72 lg:max-w-xl text-emerald-50 ml-3 text-sm lg:text-md">
-            En Nawara, nos dedicamos a transformar la manera en que exploras y
-            disfrutas de Venezuela. Nuestra aplicación, diseñada para
-            aventureros y amantes de los viajes, te brinda la oportunidad de
-            sumergirte en la riqueza natural y cultural de Venezuela de una
-            manera personalizada y emocionante.
+          <p className="max-w-72 lg:max-w-xl text-slate-50 ml-3 text-sm lg:text-md">
+            {description}
           </p>
           <div className="flex flex-col lg:flex-row">
             <ButtonWithIcon
