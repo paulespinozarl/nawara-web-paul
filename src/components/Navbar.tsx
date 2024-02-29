@@ -38,7 +38,14 @@ function Navbar(): JSX.Element {
         ${showMenu ? "hidden" : "flex"}
         `}
       >
-        <Link to={"/"} className="flex items-center font-bold text-2xl">
+        <Link
+          spy={true}
+          smooth={true}
+          duration={1000}
+          to={"landing"}
+          offset={-64}
+          className="flex items-center font-bold text-2xl"
+        >
           <img
             className="h-14 ml-4 mr-5"
             src={config.company.logo}
@@ -56,6 +63,7 @@ function Navbar(): JSX.Element {
                 key={item.name}
                 to={item.href}
                 className="font-bold text-sm mr-10"
+                offset={-94}
               >
                 {item.name}
               </Link>

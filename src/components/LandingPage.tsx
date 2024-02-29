@@ -10,7 +10,7 @@ interface ButtonWithIconProps {
 
 const gifMobile = () => {
   return (
-    <img src="/gifMob.gif" className="object-cover w-full h-full opacity-70" />
+    <img src="/gif.gif" className="object-cover w-full h-full opacity-70" />
   );
 };
 
@@ -22,7 +22,7 @@ const videoWeb = () => {
       loop
       muted
     >
-      <source src="/video1.mp4" type="video/mp4" />
+      <source src="/video.mp4" type="video/mp4" />
     </video>
   );
 };
@@ -46,7 +46,10 @@ const LandingPage = () => {
   const isShortScreen = useMediaQuery("(max-width: 430px)");
 
   return (
-    <section className="relative w-full h-calc-64 bg-slate-800 mt-16">
+    <section
+      id="landing"
+      className="relative w-full h-calc-64 bg-slate-800 mt-16"
+    >
       {isShortScreen ? gifMobile() : videoWeb()}
 
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
