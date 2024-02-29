@@ -27,11 +27,20 @@ const LandingPage = () => {
   const { title, subtitle, description } = mainHero;
 
   return (
-    <section className="relative w-full h-calc-64 bg-slate-600 mt-16">
-      <img
-        src="/videoGif.gif"
+    <section className="relative w-full h-calc-64 bg-slate-800 mt-16">
+      <video
         className="object-cover w-full h-full opacity-50"
-      />
+        autoPlay
+        loop
+        muted
+      >
+        <source src="/video1.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+      {/* <img
+        src="/videoGif.gif"
+        className="object-cover w-full h-full opacity-70"
+      /> */}
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">
