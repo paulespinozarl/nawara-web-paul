@@ -10,14 +10,14 @@ interface ButtonWithIconProps {
 
 const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
   return (
-    <span
+    <button
       className="
         border border-solid p-2 m-2 border-gray-50 rounded-xl flex items-center justify-around w-44
       "
     >
       {icon}
       <p className="text-xl">{text}</p>
-    </span>
+    </button>
   );
 };
 
@@ -34,8 +34,10 @@ const LandingPage = () => {
         loop
         muted
       >
-        <source src="/video1.mp4" type="video/mp4" />
-        Tu navegador no soporta el elemento de video.
+        <source
+          src={`${isShortScreen ? "/vidMobile.mp4" : "/video1.mp4"}`}
+          type="video/mp4"
+        />
       </video>
       {/* <img
         src="/videoGif.gif"
