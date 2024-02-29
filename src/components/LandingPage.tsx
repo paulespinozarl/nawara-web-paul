@@ -43,7 +43,7 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
 const LandingPage = () => {
   const { mainHero } = config;
   const { title, subtitle, description } = mainHero;
-  const isShortScreen = useMediaQuery("(max-width: 390px)");
+  const isShortScreen = useMediaQuery("(max-width: 430px)");
 
   return (
     <section className="relative w-full h-calc-64 bg-slate-800 mt-16">
