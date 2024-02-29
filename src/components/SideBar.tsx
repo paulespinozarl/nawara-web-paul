@@ -35,6 +35,7 @@ const SideBar: React.FC<Props> = ({ handleLinkClick }) => {
           key={item.name}
           to={item.href}
           onClick={handleLinkClick}
+          offset={-94}
           className="my-4 font-bold text-sm flex items-center"
         >
           <span className="ml-2">{icons[item.name]}</span>
