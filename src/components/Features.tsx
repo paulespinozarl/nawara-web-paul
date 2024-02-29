@@ -28,7 +28,7 @@ const Features = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.3,
   });
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const Features = () => {
     <div
       id="features"
       ref={ref}
-      className={`flex flex-col items-center transition-opacity duration-500 mt-10 ${animationClass}`}
+      className={`flex flex-col items-center transition-opacity duration-[1300ms] mt-10 ${animationClass}`}
     >
       <div className="flex flex-col items-center max-w-xs lg:max-w-4xl gap-2">
         <h2 className="text-tertiary font-semibold uppercase">{title}</h2>
