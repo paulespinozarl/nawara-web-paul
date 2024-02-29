@@ -8,12 +8,31 @@ interface ButtonWithIconProps {
   text: string;
 }
 
+const gifMobile = () => {
+  return (
+    <img src="/gifMob.gif" className="object-cover w-full h-full opacity-70" />
+  );
+};
+
+const videoWeb = () => {
+  return (
+    <video
+      className="object-cover w-full h-full opacity-70"
+      autoPlay
+      loop
+      muted
+    >
+      <source src="/video1.mp4" type="video/mp4" />
+    </video>
+  );
+};
+
 const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
   return (
     <button
       className="
         border border-solid p-2 m-2 border-gray-50 rounded-xl flex items-center justify-around w-44
-      "
+        "
     >
       {icon}
       <p className="text-xl">{text}</p>
@@ -22,27 +41,14 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
 };
 
 const LandingPage = () => {
-  const isShortScreen = useMediaQuery("(max-width: 390px)");
   const { mainHero } = config;
   const { title, subtitle, description } = mainHero;
+  const isShortScreen = useMediaQuery("(max-width: 390px)");
 
   return (
     <section className="relative w-full h-calc-64 bg-slate-800 mt-16">
-      <video
-        className="object-cover w-full h-full opacity-50"
-        autoPlay
-        loop
-        muted
-      >
-        <source
-          src={`${isShortScreen ? "/vidMobile.mp4" : "/video1.mp4"}`}
-          type="video/mp4"
-        />
-      </video>
-      {/* <img
-        src="/videoGif.gif"
-        className="object-cover w-full h-full opacity-70"
-      /> */}
+      {isShortScreen ? gifMobile() : videoWeb()}
+
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">
