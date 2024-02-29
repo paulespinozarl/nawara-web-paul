@@ -4,10 +4,12 @@ import Product from "../components/Product";
 import Whatsapp from "../components/Whatsapp";
 import LandingPage from "../components/LandingPage";
 import Canvas from "../components/Canvas";
+import Navbar from "../components/Navbar";
 
 function Index() {
   return (
     <div className="max-w-screen">
+      <Navbar />
       <LandingPage />
       <Canvas />
       <Product template="product" />

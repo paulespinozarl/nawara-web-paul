@@ -1,8 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import About from "../components/About";
 import { ListaOrdenada, datosLista } from "../components/ItemList";
 
 export default function Politics() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container">
