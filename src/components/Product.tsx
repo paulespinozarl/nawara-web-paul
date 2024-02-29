@@ -68,13 +68,18 @@ const Product = ({ template }: { template: "product" | "howWorks" }) => {
     [howWorks, product, template]
   );
 
-  const { title, items } = data;
+  const { title, items, subtitle } = data;
 
   return (
     <div id={template} className="mt-10">
-      <h2 className="text-4xl lg:text-5xl flex justify-center text-secondary font-bold">
-        {title}
-      </h2>
+      <div className="flex items-center justify-center gap-2">
+        <h2 className="text-4xl lg:text-5xl flex justify-center text-secondary font-bold">
+          {title}
+        </h2>
+        <h2 className="text-4xl lg:text-5xl flex justify-center text-tertiary font-bold">
+          {subtitle}
+        </h2>
+      </div>
       {items.map((item, index) => (
         <ProductItem
           key={index}
