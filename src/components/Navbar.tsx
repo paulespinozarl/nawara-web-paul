@@ -17,10 +17,17 @@ function Navbar(): JSX.Element {
   const isShortScreen = useMediaQuery("(max-width: 864px)");
   const [isActive, setIsActive] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [, setIsOpen] = useState(false);
 
   const toggleActive = () => {
     setIsActive(!isActive);
     setShowMenu(!showMenu);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    setIsActive(false);
+    setShowMenu(false);
   };
 
   return (
@@ -60,7 +67,7 @@ function Navbar(): JSX.Element {
         <div className={`${isActive ? "w-screen" : ""} bg-gray-50`}>
           <Button isActive={isActive} toggleActive={toggleActive} />
           <div className={`${isActive ? "" : "hidden"}`}>
-            <SideBar />
+            <SideBar handleLinkClick={handleLinkClick} />
           </div>
         </div>
       )}

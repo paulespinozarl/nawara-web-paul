@@ -1,3 +1,4 @@
+import React from "react";
 import config from "../config/index.json";
 import { MdBackpack } from "react-icons/md";
 import { FaUser, FaCog, FaWhatsapp } from "react-icons/fa";
@@ -9,7 +10,11 @@ interface NavigationItem {
   href: string;
 }
 
-const SideBar: React.FC = () => {
+interface Props {
+  handleLinkClick: () => void;
+}
+
+const SideBar: React.FC<Props> = ({ handleLinkClick }) => {
   const { navigation } = config;
 
   const icons: { [key: string]: JSX.Element } = {
@@ -21,7 +26,7 @@ const SideBar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className={`flex flex-col`}>
       {navigation.map((item: NavigationItem) => (
         <Link
           spy={true}
@@ -29,6 +34,7 @@ const SideBar: React.FC = () => {
           duration={1000}
           key={item.name}
           to={item.href}
+          onClick={handleLinkClick}
           className="my-4 font-bold text-sm flex items-center"
         >
           <span className="ml-2">{icons[item.name]}</span>
