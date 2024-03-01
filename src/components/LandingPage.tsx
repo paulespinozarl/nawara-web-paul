@@ -2,17 +2,19 @@ import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { useMediaQuery } from "@react-hook/media-query";
 import config from "../config/index.json";
+import video from "../../public/video.mp4";
 
 interface ButtonWithIconProps {
   icon: JSX.Element;
   text: string;
 }
 
-const gifMobile = () => {
-  return (
-    <img src="/gif.gif" className="object-cover w-full h-full opacity-70" />
-  );
-};
+// const gifMobile = () => {
+//   return (
+//     <img src="/gif.gif" className="object-cover w-full h-full opacity-70" />
+//     // {isShortScreen ? gifMobile() : videoWeb()}
+//   );
+// };
 
 const videoWeb = () => {
   return (
@@ -22,7 +24,7 @@ const videoWeb = () => {
       loop
       muted
     >
-      <source src="/video.mp4" type="video/mp4" />
+      <source src={video} type="video/mp4" />
     </video>
   );
 };
@@ -50,7 +52,7 @@ const LandingPage = () => {
       id="landing"
       className="relative w-full h-calc-64 bg-slate-800 mt-16"
     >
-      {isShortScreen ? gifMobile() : videoWeb()}
+      {videoWeb()}
 
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
