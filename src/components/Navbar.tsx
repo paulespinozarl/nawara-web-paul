@@ -31,10 +31,10 @@ function Navbar(): JSX.Element {
   };
 
   return (
-    <div className="flex fixed top-0 shadow-md w-screen z-50">
+    <div className="flex fixed top-0 shadow-md w-screen z-50 bg-transparent backdrop-blur-md">
       <nav
         className={`
-        bg-slate-50 h-16  text-gray-800 flex items-center w-screen justify-between
+         h-16  text-gray-800 flex items-center w-screen justify-between
         ${showMenu ? "hidden" : "flex"}
         `}
       >
