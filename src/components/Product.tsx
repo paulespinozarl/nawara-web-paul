@@ -42,8 +42,8 @@ const ProductItem: React.FC<ProductItemProps> = ({
       className={`flex justify-center items-center ${animationClass}`}
     >
       <div
-        className={`flex flex-col lg:flex-row items-center max-w-80 lg:max-w-4xl ${
-          animationDirection === "right" ? "lg:flex-row-reverse" : ""
+        className={`flex flex-col items-center max-w-xs sm:flex-row sm:max-w-xl md:max-w-2xl lg:max-w-4xl ${
+          animationDirection === "right" ? "sm:flex-row-reverse" : ""
         }`}
       >
         <div className="mt-10">
