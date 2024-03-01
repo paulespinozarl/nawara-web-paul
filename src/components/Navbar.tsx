@@ -72,7 +72,7 @@ function Navbar(): JSX.Element {
         )}
       </nav>
       {isShortScreen && (
-        <div className={`${isActive ? "w-screen" : ""} bg-gray-50`}>
+        <div className={`${isActive ? "w-screen" : ""}`}>
           <Button isActive={isActive} toggleActive={toggleActive} />
           <div className={`${isActive ? "" : "hidden"}`}>
             <SideBar handleLinkClick={handleLinkClick} />
