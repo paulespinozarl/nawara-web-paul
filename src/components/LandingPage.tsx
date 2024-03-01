@@ -16,7 +16,7 @@ const gifMobile = () => {
       loop
       muted
     >
-      <source src="/videoM.mp4" type="video/mp4" />
+      <source src="/videoP.mp4" type="video/mp4" />
     </video>
   );
 };
