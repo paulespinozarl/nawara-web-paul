@@ -8,23 +8,20 @@ interface ButtonWithIconProps {
   text: string;
 }
 
-const gifMobile = () => {
+const imgMobile = () => {
   return (
-    <video
+    <img
       className="object-cover w-full h-full opacity-70"
-      autoPlay
-      loop
-      muted
-    >
-      <source src="/videoP.mp4" type="video/mp4" />
-    </video>
+      src="/paisaje.jpg"
+      alt="Paisaje"
+    />
   );
 };
 
 const videoWeb = () => {
   return (
     <video
-      className="object-cover w-full h-full opacity-70"
+      className="object-cover w-full h-full opacity-80"
       autoPlay
       loop
       muted
@@ -57,13 +54,15 @@ const LandingPage = () => {
       id="landing"
       className="relative w-full h-calc-64 bg-slate-800 mt-16"
     >
-      {isShortScreen ? gifMobile() : videoWeb()}
+      {isShortScreen ? imgMobile() : videoWeb()}
 
       <div className="absolute top-80 left-40 transform -translate-x-32 -translate-y-72 text-white">
         <div className="flex flex-col justify-around gap-6">
           <div className="text-3xl lg:text-6xl font-bold">
-            <h1 className=" text-slate-50 w-full">{title}</h1>
-            <h1 className=" text-tertiary">{subtitle}</h1>
+            <h1 className="text-slate-50 w-full">{title}</h1>
+            <h1 className={isShortScreen ? "text-secondary" : "text-tertiary"}>
+              {subtitle}
+            </h1>
           </div>
           <p className="max-w-72 lg:max-w-xl text-slate-50 ml-3 text-sm lg:text-md">
             {description}
