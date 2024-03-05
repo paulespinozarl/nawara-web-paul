@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import About from "../components/About";
 import OrderList from "../components/OrderList";
-import { datosLista } from "../utils";
+import { data } from "../utils";
 
 export default function Politics() {
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Politics() {
             encontrar la sección que buscas.
           </span>
 
-          <OrderList datos={datosLista} />
+          <OrderList datos={data} />
 
           <span id="pregunta1" className="font-bold mx-6 text-xl">
             1. ¿QUÉ INFORMACIÓN RECOPILAMOS?

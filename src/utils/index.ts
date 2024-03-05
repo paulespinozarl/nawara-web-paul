@@ -1,4 +1,4 @@
-export const datosLista = [
+export const data = [
   { id: "pregunta1", texto: "¿QUÉ INFORMACIÓN RECOPILAMOS?" },
   { id: "pregunta2", texto: "¿CÓMO PROCESAMOS TU INFORMACIÓN?" },
   {
