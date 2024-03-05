@@ -11,7 +11,7 @@ interface ButtonWithIconProps {
 const imgMobile = () => {
   return (
     <img
-      className="object-cover w-full h-full opacity-70"
+      className="object-cover w-full h-full opacity-60"
       src="/paisaje.jpg"
       alt="Paisaje"
     />
@@ -64,7 +64,7 @@ const Landing = () => {
               {subtitle}
             </h1>
           </div>
-          <p className="max-w-72 lg:max-w-xl text-slate-50 ml-3 text-sm lg:text-md">
+          <p className="max-w-72 lg:max-w-xl text-slate-50 ml-3 text-md lg:text-lg">
             {description}
           </p>
           <div className="flex flex-col lg:flex-row">
