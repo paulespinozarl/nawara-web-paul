@@ -1,0 +1,11 @@
+export { default as About } from "./About.tsx";
+export { default as Button } from "./Button.tsx";
+export { default as Canvas } from "./Canvas.tsx";
+export { default as Features } from "./Features.tsx";
+export { default as ItemList } from "./OrderList.tsx";
+export { default as Landing } from "./Landing.tsx";
+export { default as Navbar } from "./Navbar.tsx";
+export { default as Product } from "./Product.tsx";
+export { default as SideBar } from "./SideBar.tsx";
+export { default as Wave } from "./Wave.tsx";
+export { default as Whatsapp } from "./Whatsapp.tsx";

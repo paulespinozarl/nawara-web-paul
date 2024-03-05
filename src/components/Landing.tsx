@@ -44,7 +44,7 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
   );
 };
 
-const LandingPage = () => {
+const Landing = () => {
   const { mainHero } = config;
   const { title, subtitle, description } = mainHero;
   const isShortScreen = useMediaQuery("(max-width: 430px)");
@@ -83,4 +83,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Landing;

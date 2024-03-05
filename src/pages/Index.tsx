@@ -1,16 +1,18 @@
-import About from "../components/About";
-import Features from "../components/Features";
-import Product from "../components/Product";
-import Whatsapp from "../components/Whatsapp";
-import LandingPage from "../components/LandingPage";
-import Canvas from "../components/Canvas";
-import Navbar from "../components/Navbar";
+import {
+  About,
+  Canvas,
+  Features,
+  Landing,
+  Navbar,
+  Product,
+  Whatsapp,
+} from "../components";
 
 function Index() {
   return (
     <div className="max-w-screen">
       <Navbar />
-      <LandingPage />
+      <Landing />
       <Canvas />
       <Product template="product" />
       <Canvas />

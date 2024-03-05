@@ -1,20 +1,3 @@
-interface ItemListaProps {
-  id: string;
-  texto: string;
-}
-
-const ItemList: React.FC<ItemListaProps> = ({ id, texto }) => (
-  <li>
-    <a href={`#${id}`} className="no-underline text-tertiary">
-      {texto}
-    </a>
-  </li>
-);
-
-interface ListaOrdenadaProps {
-  datos: { id: string; texto: string }[];
-}
-
 export const datosLista = [
   { id: "pregunta1", texto: "¿QUÉ INFORMACIÓN RECOPILAMOS?" },
   { id: "pregunta2", texto: "¿CÓMO PROCESAMOS TU INFORMACIÓN?" },
@@ -49,11 +32,3 @@ export const datosLista = [
       "¿CÓMO PUEDES REVISAR, ACTUALIZAR O ELIMINAR LOS DATOS QUE RECOPILAMOS DE TI?",
   },
 ];
-
-export const ListaOrdenada: React.FC<ListaOrdenadaProps> = ({ datos }) => (
-  <ol className="font-bold mx-3 mb-10 flex flex-col list-decimal">
-    {datos.map((item) => (
-      <ItemList key={item.id} id={item.id} texto={item.texto} />
-    ))}
-  </ol>
-);
