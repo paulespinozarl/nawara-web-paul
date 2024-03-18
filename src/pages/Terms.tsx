@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { About } from "../components/About";
 
-export default function Terms() {
+const Terms = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -149,4 +149,6 @@ export default function Terms() {
       </div>
     </>
   );
-}
+};
+
+export { Terms };

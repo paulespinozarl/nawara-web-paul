@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Politics from "../pages/Politics";
-import Terms from "../pages/Terms";
+import { Politics } from "../pages/Politics";
+import { Terms } from "../pages/Terms";
 import Index from "../pages/Index";
 
 const RoutesPage = () => {

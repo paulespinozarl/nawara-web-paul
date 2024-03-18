@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { About, OrderList } from "../components";
 import { data } from "../utils";
 
-export default function Politics() {
+const Politics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -386,4 +386,6 @@ export default function Politics() {
       </div>
     </>
   );
-}
+};
+
+export { Politics };

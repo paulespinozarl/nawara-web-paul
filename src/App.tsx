@@ -1,11 +1,11 @@
 import { RoutesPage } from "./routes/RoutesPage";
 
-function App() {
+const App = () => {
   return (
     <>
       <RoutesPage />
     </>
   );
-}
+};
 
 export { App };
