@@ -1,9 +1,8 @@
-import { useMediaQuery } from "@react-hook/media-query";
-import config from "../config/index.json";
 import { useState } from "react";
-import Button from "./Button";
+import { useMediaQuery } from "@react-hook/media-query";
 import { Link } from "react-scroll";
-import SideBar from "./SideBar";
+import config from "../config/index.json";
+import { Button, SideBar } from "./";
 
 interface NavigationItem {
   name: string;
@@ -44,7 +43,7 @@ function Navbar(): JSX.Element {
           duration={1000}
           to={"landing"}
           offset={-64}
-          className="flex items-center font-bold text-2xl"
+          className="flex items-center font-bold text-2xl cursor-pointer"
         >
           <img
             className="h-14 ml-4 mr-5"
@@ -62,7 +61,7 @@ function Navbar(): JSX.Element {
                 duration={1000}
                 key={item.name}
                 to={item.href}
-                className="font-bold text-sm mr-10"
+                className="font-bold text-sm mr-10 cursor-pointer"
                 offset={-94}
               >
                 {item.name}
@@ -83,4 +82,4 @@ function Navbar(): JSX.Element {
   );
 }
 
-export default Navbar;
+export { Navbar };

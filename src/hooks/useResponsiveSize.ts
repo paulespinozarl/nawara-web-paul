@@ -17,4 +17,4 @@ const useResponsiveSize = () => {
   return { width, height };
 };
 
-export default useResponsiveSize;
+export { useResponsiveSize };

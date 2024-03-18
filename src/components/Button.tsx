@@ -20,4 +20,4 @@ const Button: React.FC<Props> = ({ isActive, toggleActive }) => {
   );
 };
 
-export default Button;
+export { Button };

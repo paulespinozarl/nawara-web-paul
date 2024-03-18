@@ -1,8 +1,6 @@
-import "animate.css";
-
 import { useEffect, useMemo, useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import "animate.css";
 import config from "../config/index.json";
 
 interface ProductItemProps {
@@ -93,4 +91,4 @@ const Product = ({ template }: { template: "product" | "howWorks" }) => {
   );
 };
 
-export default Product;
+export { Product };

@@ -1,6 +1,6 @@
+import { useMediaQuery } from "@react-hook/media-query";
 import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
-import { useMediaQuery } from "@react-hook/media-query";
 import config from "../config/index.json";
 
 interface ButtonWithIconProps {
@@ -83,4 +83,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export { Landing };

@@ -1,9 +1,9 @@
 import React from "react";
-import config from "../config/index.json";
 import { MdBackpack } from "react-icons/md";
 import { FaUser, FaCog, FaWhatsapp } from "react-icons/fa";
 import { MdInfo } from "react-icons/md";
 import { Link } from "react-scroll";
+import config from "../config/index.json";
 
 interface NavigationItem {
   name: string;
@@ -36,7 +36,7 @@ const SideBar: React.FC<Props> = ({ handleLinkClick }) => {
           to={item.href}
           onClick={handleLinkClick}
           offset={-94}
-          className="my-4 font-bold text-sm flex items-center"
+          className="my-4 font-bold text-sm flex items-center cursor-pointer"
         >
           <span className="ml-2">{icons[item.name]}</span>
           <span className="ml-2">{item.name}</span>
@@ -46,4 +46,4 @@ const SideBar: React.FC<Props> = ({ handleLinkClick }) => {
   );
 };
 
-export default SideBar;
+export { SideBar };

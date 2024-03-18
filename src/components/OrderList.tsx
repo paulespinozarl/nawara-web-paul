@@ -23,4 +23,4 @@ const OrderList: React.FC<ListaOrdenadaProps> = ({ datos }) => (
   </ol>
 );
 
-export default OrderList;
+export { OrderList };

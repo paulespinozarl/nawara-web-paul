@@ -82,4 +82,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export { About };

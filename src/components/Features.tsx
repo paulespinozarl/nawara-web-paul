@@ -1,11 +1,10 @@
-import config from "../config/index.json";
-
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { MdOutlineHandshake } from "react-icons/md";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { AiOutlineRise } from "react-icons/ai";
 import { GiPayMoney } from "react-icons/gi";
-import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import config from "../config/index.json";
 
 const icons: { [key: string]: JSX.Element } = {
   "Maximiza tus Ingresos, Minimiza tus Esfuerzos": (
@@ -81,4 +80,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export { Features };

@@ -1,7 +1,5 @@
 import { FC } from "react";
-
-import { useCanvasContext } from "../hooks/useCanvas";
-import useResponsiveSize from "../hooks/useResponsiveSize";
+import { useCanvasContext, useResponsiveSize } from "../hooks";
 import WaveObj from "../utils/wave";
 
 const Wave: FC = () => {
@@ -26,4 +24,4 @@ const Wave: FC = () => {
   return null;
 };
 
-export default Wave;
+export { Wave };

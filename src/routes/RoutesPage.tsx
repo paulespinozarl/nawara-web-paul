@@ -16,4 +16,4 @@ const RoutesPage = () => {
   );
 };
 
-export default RoutesPage;
+export { RoutesPage };

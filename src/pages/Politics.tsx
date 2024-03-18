@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import About from "../components/About";
-import OrderList from "../components/OrderList";
+import { About, OrderList } from "../components";
 import { data } from "../utils";
 
 export default function Politics() {

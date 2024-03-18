@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import About from "../components/About";
+import { About } from "../components/About";
 
 export default function Terms() {
   useEffect(() => {
