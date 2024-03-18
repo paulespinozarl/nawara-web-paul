@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { About } from "../components/About";
+import { ButtonBack } from "../components";
 
 const Terms = () => {
   useEffect(() => {
@@ -10,7 +11,8 @@ const Terms = () => {
     <>
       <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
-          <span className="font-bold text-xl md:text-3xl mx-8 flex justify-center text-tertiary">
+          <ButtonBack />
+          <span className="font-bold text-xl md:text-3xl mx-8 mt-10 md:mt-0 text-center flex justify-center text-tertiary">
             Términos y Condiciones de Uso de Nawara
           </span>
           Fecha de entrada en vigor: 24 de Enero de 2024 Bienvenido a Nawara,

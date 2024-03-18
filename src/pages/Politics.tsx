@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { About, OrderList } from "../components";
+import { About, ButtonBack, OrderList } from "../components";
 import { data } from "../utils";
 
 const Politics = () => {
@@ -11,7 +11,8 @@ const Politics = () => {
     <>
       <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
-          <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-tertiary">
+          <ButtonBack />
+          <span className="font-bold text-xl md:text-5xl mx-4 lg:mx-8 mt-10 md:mt-0 text-tertiary text-center">
             POLÍTICA DE PRIVACIDAD
           </span>
           <span className="font-bold mx-3">

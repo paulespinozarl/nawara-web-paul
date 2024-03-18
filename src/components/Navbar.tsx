@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 import { Link } from "react-scroll";
 import config from "../config/index.json";
-import { Button, SideBar } from "./";
+import { ButtonMenu, SideBar } from "./";
 
 interface NavigationItem {
   name: string;
@@ -72,7 +72,7 @@ function Navbar(): JSX.Element {
       </nav>
       {isShortScreen && (
         <div className={`${isActive ? "w-screen" : ""}`}>
-          <Button isActive={isActive} toggleActive={toggleActive} />
+          <ButtonMenu isActive={isActive} toggleActive={toggleActive} />
           <div className={`${isActive ? "" : "hidden"}`}>
             <SideBar handleLinkClick={handleLinkClick} />
           </div>

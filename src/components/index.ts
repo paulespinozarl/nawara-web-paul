@@ -1,5 +1,5 @@
 export { About } from "./About.tsx";
-export { Button } from "./Button.tsx";
+export { ButtonMenu, ButtonBack } from "./Button.tsx";
 export { Canvas } from "./Canvas.tsx";
 export { Features } from "./Features.tsx";
 export { Landing } from "./Landing.tsx";
